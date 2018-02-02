@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Onclick</title>
+	<style type="text/css">
+		.button{
+			background: tan;
+			margin-top: 1px;
+			padding: 2px;
+			font-size: 20px;
+
+		}
+		td{
+			width: 300px;
+			height: 35px;
+		}
+
+
+	</style>
+</head>
+<body>
+	
+	<table border="1px">
+		<br><input type="text" id="input" placeholder="Enter The value" onfocus="fun4()" onblur="fun5()" onchange="fun2()" oninput="fun3()"><br><br>
+		<tr>
+			<th>Event </th>
+			<th>Result</th>
+		</tr>
+		<tr>
+			<td>On Input</td>
+			<td><div id="result3"></div></td>
+		</tr>
+		<tr>
+			<td>On Change</td>
+			<td><div id="result2"></div></td>
+		</tr>
+		<tr>
+			<td>On Click <button  id="click" onclick="fun1()">click hare</button></td>
+			<td><div id="result1"></div></td>
+		</tr>
+		
+		
+		
+		
+	
+	
+	
+	</table>
+
+<script type="text/javascript">
+		function fun1() {
+			var input = document.getElementById('input').value;
+			document.getElementById('result1').innerHTML = input ;
+
+		}
+		function fun2() {
+			var input = document.getElementById('input').value;
+			document.getElementById('result2').innerHTML = input ;
+
+		}
+		function fun3() {
+			var input = document.getElementById('input').value;
+			document.getElementById('result3').innerHTML = input ;
+		}
+		function fun4() {
+			 document.getElementById('input').style.background = "tan";
+			
+		}
+		function fun5() {
+			 document.getElementById('input').style.background = "#fff";
+			
+		}
+		
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
